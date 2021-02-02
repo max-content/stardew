@@ -1,24 +1,14 @@
-import React from 'react';
+import React from 'react'
+// import recipes from './recipes.json'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const fetchFood = () => {
+    fetch('https://raw.githubusercontent.com/ronniekram/stardew/main/src/recipes.json')
+    .then(resp => resp.json())
+    .then(data => console.log(data))
+  }
+  return <div> {fetchFood()}</div>
 }
 
 export default App;
