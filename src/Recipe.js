@@ -1,6 +1,4 @@
 import React from 'react';
-import energy from '../public/img/energy.png';
-import health from '../public/img/health.png'
 
 class Recipe extends React.Component {
   render() {
@@ -12,8 +10,8 @@ class Recipe extends React.Component {
         <div className="recipe-info">
           <p> <strong>Buffs: </strong> Farming + 3</p>
           <p> <strong>Buff Duration: </strong> 5m 35s</p>
-          <p> <img src={energy} /> 200 </p>
-          <p> <img src={health} /> 90 </p>
+          <p> <img src="https://raw.githubusercontent.com/ronniekram/stardew/main/public/img/energy.png" /> 200 </p>
+          <p> <img src="https://raw.githubusercontent.com/ronniekram/stardew/main/public/img/health.png" /> 90 </p>
           <p><strong>Sell Price: </strong> 150g</p>
         </div>
         <div clasName="recipe-ingredients">
