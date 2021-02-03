@@ -1,4 +1,5 @@
 import React from 'react';
+import Recipe from './Recipe'
 
 class Names extends React.Component {
   constructor(props) {
@@ -15,9 +16,10 @@ class Names extends React.Component {
       })
     }
     return (
-      <ul> 
-        {listRecNames()}
-      </ul>
+      // <ul> 
+      //   {listRecNames()}
+      // </ul>
+      <Recipe />
     )
   }
 }
